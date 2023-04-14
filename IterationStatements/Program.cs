@@ -24,14 +24,14 @@ namespace IterationStatements
             // Increment num by 1
             // Then add num to the collection - numbers
             // Hint: reference num inside of the Add method's parentheses
-            do 
-            {   
+            do
+            {
                 numbers.Add(num);
-                //Console.WriteLine(numbers[num]); //Test code
+                Console.WriteLine(numbers[num]); //Test code
                 num++;
-                
 
-            } while (num < 100);// <---- While your variable is less than 100
+
+                } while (num < 100);// <---- While your variable is less than 100
 
 
 
@@ -50,6 +50,7 @@ namespace IterationStatements
 
 
             // This is to show the user that the numbers will start increasing on the console
+            Console.WriteLine("");
             Console.WriteLine("Increase:");
 
 
@@ -57,18 +58,15 @@ namespace IterationStatements
             //In the scope of the foreach loop, print each number in numbers
             foreach (int i in numbers)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(numbers[i]);
             }
-
-
-
             Console.WriteLine("");
             Console.WriteLine("Decrease:");
-           // Create a for loop - this will print the numbers in reverse order - from 200 to 1
-                // in your initializer set the value of i to 199
-                // in your conditional, as long as i is less than or equal to the amount of items in "numbers" - use (numbers.Count)
-                // AND as long as i is greater than or equal to 0
-                // Decrement i by 1
+            // Create a for loop - this will print the numbers in reverse order - from 200 to 1
+            // in your initializer set the value of i to 199
+            // in your conditional, as long as i is less than or equal to the amount of items in "numbers" - use (numbers.Count)
+            // AND as long as i is greater than or equal to 0
+            // Decrement i by 1
 
             //start for loop here
             for (int i = 199; i <= numbers.Count && i >= 0; i--)
